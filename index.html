@@ -4,10 +4,11 @@
 <head>
     <title>Assignment 19 </title>
     <style>
-        body{
+        body {
             padding: 0%;
             margin: 0%;
         }
+
         .profile-container {
 
             background-color: rgb(224, 201, 170);
@@ -49,67 +50,94 @@
             position: relative;
             bottom: 30px;
         }
+
         .navbar {
             background-color: #0f172a;
             width: 100%;
             height: 60.5px;
-            position:sticky;
+            position: sticky;
             top: 0px;
             display: flex;
             justify-content: space-around;
-            Z-index:10 ;
+            Z-index: 10;
         }
-        .nav-items{
+
+        .nav-items {
             margin-left: 30px;
             display: flex;
             align-items: center;
             cursor: pointer;
 
         }
-        .nav-text{
-         
-         margin-left: 30px;
-         font-size: 20px;
-         color: white;
-     }
+
+        .nav-text {
+
+            margin-left: 30px;
+            font-size: 20px;
+            color: white;
+        }
+        #img{
+            height: 30px;
+             border-radius: 50%; 
+             margin-right: -20px;
+
+        }
 
         /* Small Devices */
         @media screen and (max-width: 600px) {
+            .profile-card {
+             height: 150px;
+          width: 100%;
+          margin: 0%;
+            }
+            .profile-name {
+                font-size: 20px;
+                text-align: center;
+            }
+            .navbar {
+                justify-content: space-evenly;
+            }
+            .nav-text {
+                display: none;
+            }
+            .profile-pic {
+                margin-left: 27%;
 
-        }
+            }
+            #img{
+                height: 30px; border-radius: 50%; margin-left: 20px;
+            }
+            /* Normal Devices */
+            @media screen and (min-width: 601px) and (max-width: 768px) {}
 
-        /* Normal Devices */
-        @media screen and (min-width: 601px) and (max-width: 768px) {
+            /* Tablets Devices */
+            @media screen and (min-width: 769px) and (max-width: 992px) {}
 
-        }
-
-        /* Tablets Devices */
-        @media screen and (min-width: 769px) and (max-width: 992px) {
-
-        }
-
-        /* Large Devices */
-        @media screen and (min-width: 993px) and (max-width: 1200px) {
-
-        }
+            /* Large Devices */
+            @media screen and (min-width: 993px) and (max-width: 1200px) {}
     </style>
 </head>
 
 <body>
     <div class="navbar">
         <div class="nav-items">
+            <img src="./home logo.png" id="img">
             <span class="nav-text">Home </span>
         </div>
         <div class="nav-items">
+            <img src="./colege logo.png" id="img">
             <span class="nav-text">Colleges </span>
         </div>
         <div class="nav-items">
+            <img src="./spaceship.png" id="img">
             <span class="nav-text">Spaceship </span>
         </div>
         <div class="nav-items">
+            <img src="./internship logo.png" id="img">
             <span class="nav-text">Internship </span>
         </div>
         <div class="nav-items">
+            <img src="./services.png" id="img">
             <span class="nav-text">Services </span>
         </div>
 
