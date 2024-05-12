@@ -4,6 +4,10 @@
 <head>
     <title>Assignment 19 </title>
     <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+        }
         .profile-container {
 
             background-color: rgb(224, 201, 170);
@@ -11,7 +15,6 @@
             height: 1000px;
             display: flex;
             flex-direction: row;
-            ;
             flex-wrap: wrap;
             justify-content: space-between;
 
@@ -24,10 +27,10 @@
             border: 2px solid black;
             border-radius: 10px;
             padding: 20px;
-            margin-top: 10px;
-            margin-bottom: 90px;
             margin: 10px;
+            position: relative;
 
+            top: 40px;
         }
 
         .profile-pic {
@@ -46,6 +49,29 @@
             position: relative;
             bottom: 30px;
         }
+        .navbar {
+            background-color: #0f172a;
+            width: 100%;
+            height: 60.5px;
+            position:sticky;
+            top: 0px;
+            display: flex;
+            justify-content: space-around;
+            Z-index:10 ;
+        }
+        .nav-items{
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+        }
+        .nav-text{
+         
+         margin-left: 30px;
+         font-size: 20px;
+         color: white;
+     }
 
         /* Small Devices */
         @media screen and (max-width: 600px) {
@@ -64,12 +90,30 @@
 
         /* Large Devices */
         @media screen and (min-width: 993px) and (max-width: 1200px) {
-            
+
         }
     </style>
 </head>
 
 <body>
+    <div class="navbar">
+        <div class="nav-items">
+            <span class="nav-text">Home </span>
+        </div>
+        <div class="nav-items">
+            <span class="nav-text">Colleges </span>
+        </div>
+        <div class="nav-items">
+            <span class="nav-text">Spaceship </span>
+        </div>
+        <div class="nav-items">
+            <span class="nav-text">Internship </span>
+        </div>
+        <div class="nav-items">
+            <span class="nav-text">Services </span>
+        </div>
+
+    </div>
     <div class="profile-container">
         <div class="profile-card">
             <img src="pinki.png" alt="pinki mam photo" class="profile-pic">
@@ -86,6 +130,10 @@
             <h1 class="profile-name">vaishnavi Hole from road to code</h1>
         </div>
 
+        <div class="profile-card">
+            <img src="suraj sir.jpeg" alt="suraj sir photo" class="profile-pic">
+            <h1 class="profile-name">Suraj Sir from road to code</h1>
+        </div>
     </div>
 </body>
 
