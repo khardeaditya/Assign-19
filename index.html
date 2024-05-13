@@ -17,7 +17,9 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-
+            background-image: url(./road\ to\ code\ icon.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .profile-card {
@@ -28,7 +30,7 @@
             border-radius: 10px;
             padding: 20px;
             margin: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
         }
 
         .profile-pic {
@@ -97,7 +99,7 @@
                 background-color: rgb(133, 238, 203);
 
             }
-       
+
             .nav-text {
                 display: none;
             }
@@ -114,18 +116,45 @@
             }
         }
 
-            /* Normal Devices */
-            @media screen and (min-width: 600px) and (max-width: 768px) { 
-         
+        /* Normal Devices */
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+            .profile-name {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .profile-pic {
+                margin: auto;
+            }
+
+
+            .profile-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
 
             }
-            
 
-            /* Tablets Devices */
-            @media screen and (min-width: 769px) and (max-width: 992px) {
+            .profile-card {
+                width: 200px;
+                height: 100px;
+            }
 
-            /* Large Devices */
-            @media screen and (min-width: 993px) and (max-width: 1200px) {}
+            .profile-name {
+                margin: auto;
+            }
+
+        }
+
+
+        /* Tablets Devices */
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+
+         
+        }
+
+        /* Large Devices */
+        @media screen and (min-width: 993px) and (max-width: 1200px) {}
     </style>
 </head>
 
