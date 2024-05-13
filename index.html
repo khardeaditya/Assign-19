@@ -13,7 +13,6 @@
 
             background-color: rgb(224, 201, 170);
             padding: 50px;
-            height: 1000px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -29,9 +28,7 @@
             border-radius: 10px;
             padding: 20px;
             margin: 10px;
-            position: relative;
-
-            top: 40px;
+            margin-bottom: 30px;
         }
 
         .profile-pic {
@@ -63,7 +60,6 @@
         }
 
         .nav-items {
-            margin-left: 30px;
             display: flex;
             align-items: center;
             cursor: pointer;
@@ -71,47 +67,62 @@
         }
 
         .nav-text {
-
             margin-left: 30px;
             font-size: 20px;
             color: white;
         }
-        #img{
+
+        .img {
             height: 30px;
-             border-radius: 50%; 
-             margin-right: -20px;
+            border-radius: 50%;
+            margin-right: -20px;
 
         }
 
         /* Small Devices */
         @media screen and (max-width: 600px) {
             .profile-card {
-             height: 150px;
-          width: 100%;
-          margin: 0%;
+                height: 150px;
+                width: 100%;
+                margin-bottom: 40px;
             }
+
             .profile-name {
                 font-size: 20px;
                 text-align: center;
             }
+
             .navbar {
                 justify-content: space-evenly;
+                background-color: rgb(133, 238, 203);
+
             }
+       
             .nav-text {
                 display: none;
             }
+
             .profile-pic {
                 margin-left: 27%;
 
             }
-            #img{
-                height: 30px; border-radius: 50%; margin-left: 20px;
+
+            .img {
+                height: 30px;
+                border-radius: 50%;
+                margin-right: auto;
             }
+        }
+
             /* Normal Devices */
-            @media screen and (min-width: 601px) and (max-width: 768px) {}
+            @media screen and (min-width: 600px) and (max-width: 768px) { 
+         
+
+            }
+            
 
             /* Tablets Devices */
-            @media screen and (min-width: 769px) and (max-width: 992px) {}
+            @media screen and (min-width: 769px) and (max-width: 992px) {
 
             /* Large Devices */
             @media screen and (min-width: 993px) and (max-width: 1200px) {}
@@ -121,23 +132,23 @@
 <body>
     <div class="navbar">
         <div class="nav-items">
-            <img src="./home logo.png" id="img">
+            <img src="./home logo.png" class="img">
             <span class="nav-text">Home </span>
         </div>
         <div class="nav-items">
-            <img src="./colege logo.png" id="img">
+            <img src="./colege logo.png" class="img">
             <span class="nav-text">Colleges </span>
         </div>
         <div class="nav-items">
-            <img src="./spaceship.png" id="img">
+            <img src="./spaceship.png" class="img">
             <span class="nav-text">Spaceship </span>
         </div>
         <div class="nav-items">
-            <img src="./internship logo.png" id="img">
+            <img src="./internship logo.png" class="img">
             <span class="nav-text">Internship </span>
         </div>
         <div class="nav-items">
-            <img src="./services.png" id="img">
+            <img src="./services.png" class="img">
             <span class="nav-text">Services </span>
         </div>
 
